@@ -1,0 +1,69 @@
+@import "../Variables/Variables.scss";
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $greyColor5;
+
+  &__title {
+    padding: 20px 0 10px 0;
+
+    h1 {
+      color: $whiteColor;
+      font-family: $comfortaa;
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  &__text {
+    padding: 10px 0 10px 0;
+
+    p {
+      color: $whiteColor;
+      font-family: $comfortaa;
+      font-weight: 600;
+    }
+  }
+
+  &__links {
+    li {
+      display: inline-block;
+      padding: 40px 10px 0 10px;
+      font-size: 2em;
+
+      a {
+        color: $whiteColor;
+
+        &:hover {
+          color: $roseColor1;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    padding: 40px 0 20px 0;
+
+    p {
+      padding: 5px;
+      font-size: 0.9em;
+      font-family: $comfortaa;
+      color: $whiteColor;
+
+      a {
+        text-decoration: none;
+        color: $whiteColor;
+
+        &:hover {
+          color: $roseColor1;
+        }
+      }
+    }
+  }
+}

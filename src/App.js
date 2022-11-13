@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import "./Styles/Navbar.css";
+
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Staff from "./Pages/Staff";
+import ErrorPage from "./Pages/ErrorPage";
+
+import Footer from "./Pages/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav className="navbar">
+        <nav className="navbar__links">
+          <Link to="/">Início</Link>
+          <Link to="/sobre">Sobre</Link>
+          <Link to="/equipe">Equipe</Link>
+          <a href="https://discord.gg/WbPGYFHW7X" target="_blank">
+            Discord
+          </a>
+        </nav>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<About />} />
+        <Route path="/equipe" element={<Staff />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      
+      <Footer />
+    </Router>
   );
 }
 
