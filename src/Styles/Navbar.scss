@@ -3,24 +3,63 @@
 .navbar {
   width: 100%;
   height: 60px;
-  background-color: $greyColor5;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
+  &__icon {
+    padding: 0 5px 0 0;
+  }
+
+  &__dark-mode {
+    padding: 0 10px 0 0;
+  }
+
   a {
-    color: $whiteColor;
     font-size: 1.2em;
     text-decoration: none;
     font-family: $comfortaa;
     margin: 10px;
-
-    &:hover{
-      color: $roseColor1;
-    }
   }
 
   &__links {
     margin-right: 20px;
+  }
+}
+
+// Dark Mode
+#light {
+  .navbar {
+    background-color: $roseColor1;
+
+    &__icon {
+      color: $greyColor5;
+    }
+
+    a {
+      color: $whiteColor;
+
+      &:hover {
+        color: $greyColor5;
+      }
+    }
+  }
+}
+
+#dark {
+  .navbar {
+    background-color: $greyColor5;
+
+    &__icon {
+      color: $roseColor1;
+    }
+
+    a {
+      color: $whiteColor;
+
+      &:hover {
+        color: $roseColor1;
+      }
+    }
   }
 }

@@ -5,21 +5,48 @@
 .navbar {
   width: 100%;
   height: 60px;
-  background-color: #485166;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+.navbar__icon {
+  padding: 0 5px 0 0;
+}
+.navbar__dark-mode {
+  padding: 0 10px 0 0;
+}
 .navbar a {
-  color: #ffffff;
   font-size: 1.2em;
   text-decoration: none;
   font-family: "Comfortaa", serif;
   margin: 10px;
 }
-.navbar a:hover {
-  color: #fb9cb2;
-}
 .navbar__links {
   margin-right: 20px;
+}
+
+#light .navbar {
+  background-color: #fb9cb2;
+}
+#light .navbar__icon {
+  color: #485166;
+}
+#light .navbar a {
+  color: #ffffff;
+}
+#light .navbar a:hover {
+  color: #485166;
+}
+
+#dark .navbar {
+  background-color: #485166;
+}
+#dark .navbar__icon {
+  color: #fb9cb2;
+}
+#dark .navbar a {
+  color: #ffffff;
+}
+#dark .navbar a:hover {
+  color: #fb9cb2;
 }/*# sourceMappingURL=Navbar.css.map */
