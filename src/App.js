@@ -33,6 +33,14 @@ function App() {
       <div className="App" id={theme}>
         <Router>
           <nav className="navbar">
+            <nav className="navbar__links">
+              <Link to="/">Início</Link>
+              <Link to="/sobre">Sobre</Link>
+              <Link to="/equipe">Equipe</Link>
+              <a href="https://discord.gg/WbPGYFHW7X" target="_blank">
+                Discord
+              </a>
+            </nav>
             <div className="navbar__icon">
               {theme == "light" ? <BsFillSunFill /> : <BsFillMoonFill />}
             </div>
@@ -46,14 +54,6 @@ function App() {
                 checkedIcon={false}
               />
             </div>
-            <nav className="navbar__links">
-              <Link to="/">Início</Link>
-              <Link to="/sobre">Sobre</Link>
-              <Link to="/equipe">Equipe</Link>
-              <a href="https://discord.gg/WbPGYFHW7X" target="_blank">
-                Discord
-              </a>
-            </nav>
           </nav>
 
           <Routes>

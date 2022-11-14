@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 .navbar {
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -13,16 +13,16 @@
   padding: 0 5px 0 0;
 }
 .navbar__dark-mode {
-  padding: 0 10px 0 0;
+  padding: 0 20px 0 0;
 }
 .navbar a {
   font-size: 1.2em;
   text-decoration: none;
   font-family: "Comfortaa", serif;
-  margin: 10px;
+  margin: 0 10px 0 0;
 }
 .navbar__links {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #light .navbar {

@@ -2,7 +2,12 @@ import React from "react";
 import "../Styles/Footer.css";
 
 //Icons
-import { BsTwitch, BsYoutube, BsDiscord } from "react-icons/bs";
+import {
+  BsTwitch,
+  BsYoutube,
+  BsDiscord,
+  BsFillArrowUpCircleFill,
+} from "react-icons/bs";
 
 function Footer() {
   return (
@@ -50,6 +55,12 @@ function Footer() {
           </a>
           )
         </p>
+      </div>
+
+      <div className="footer__top-button">
+        <a href="/">
+          <BsFillArrowUpCircleFill />
+        </a>
       </div>
     </div>
   );

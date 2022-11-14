@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 .footer__title {
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0 0;
 }
 .footer__title h1 {
   font-family: "Comfortaa", serif;
@@ -20,7 +20,7 @@
   letter-spacing: 0.2em;
 }
 .footer__text {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
 }
 .footer__text p {
   font-family: "Comfortaa", serif;
@@ -40,6 +40,14 @@
   font-family: "Comfortaa", serif;
 }
 .footer__copyright p a {
+  text-decoration: none;
+}
+.footer__top-button {
+  position: absolute;
+  font-size: 2em;
+  right: 20px;
+}
+.footer__top-button a {
   text-decoration: none;
 }
 
@@ -67,6 +75,12 @@
 #light .footer__copyright p a:hover {
   color: #485166;
 }
+#light .footer__top-button a {
+  color: #ffffff;
+}
+#light .footer__top-button a:hover {
+  color: #485166;
+}
 
 #dark .footer {
   background-color: #485166;
@@ -90,5 +104,11 @@
   color: #ffffff;
 }
 #dark .footer__copyright p a:hover {
+  color: #fb9cb2;
+}
+#dark .footer__top-button a {
+  color: #ffffff;
+}
+#dark .footer__top-button a:hover {
   color: #fb9cb2;
 }/*# sourceMappingURL=Footer.css.map */

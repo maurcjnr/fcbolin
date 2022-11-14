@@ -9,7 +9,7 @@
   flex-direction: column;
 
   &__title {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
 
     h1 {
       font-family: $comfortaa;
@@ -20,7 +20,7 @@
   }
 
   &__text {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0 0;
 
     p {
       font-family: $comfortaa;
@@ -47,6 +47,16 @@
       a {
         text-decoration: none;
       }
+    }
+  }
+
+  &__top-button {
+    position: absolute;
+    font-size: 2em;
+    right: 20px;
+
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -93,6 +103,16 @@
         }
       }
     }
+
+    &__top-button {
+      a {
+        color: $whiteColor;
+
+        &:hover {
+          color: $greyColor5;
+        }
+      }
+    }
   }
 }
 
@@ -134,6 +154,16 @@
           &:hover {
             color: $roseColor1;
           }
+        }
+      }
+    }
+
+    &__top-button {
+      a {
+        color: $whiteColor;
+
+        &:hover {
+          color: $roseColor1;
         }
       }
     }
