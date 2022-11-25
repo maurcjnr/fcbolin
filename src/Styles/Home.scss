@@ -1,7 +1,6 @@
 @import "../Variables/Variables.scss";
 
 .home {
-  background-image: url("../Images/fcbolin-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,9 +51,11 @@
 // Dark Mode
 #light {
   .home {
+    background-image: url("../Images/fcbolin-bg.png");
+
     &--opacity {
       background-color: $greyColor1;
-      opacity: 0.5;
+      opacity: 0.4;
     }
 
     &__content {
@@ -75,9 +76,11 @@
 
 #dark {
   .home {
+    background-image: url("../Images/fcbolin-bg-dark.png");
+
     &--opacity {
       background-color: $roseColor1;
-      opacity: 0.5;
+      opacity: 0.4;
     }
 
     &__content {

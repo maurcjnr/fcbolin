@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 .home {
-  background-image: url("../Images/fcbolin-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,9 +44,12 @@
   font-weight: 600;
 }
 
+#light .home {
+  background-image: url("../Images/fcbolin-bg.png");
+}
 #light .home--opacity {
   background-color: #8b94ac;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 #light .home__content__title h1 {
   color: #ffffff;
@@ -56,9 +58,12 @@
   color: #ffffff;
 }
 
+#dark .home {
+  background-image: url("../Images/fcbolin-bg-dark.png");
+}
 #dark .home--opacity {
   background-color: #fb9cb2;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 #dark .home__content__title h1 {
   color: #ffffff;
