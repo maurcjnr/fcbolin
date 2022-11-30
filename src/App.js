@@ -11,7 +11,8 @@ import { BsFillSunFill, BsFillMoonFill, BsList, BsX } from "react-icons/bs";
 import "./Styles/Navbar.css";
 
 //Imported Images
-import FCBolinIcon from "./Images/fcbolin.png";
+import FCBolinIconLight from "./Images/fcbolin-light.png";
+import FCBolinIconDark from "./Images/fcbolin-dark.png";
 
 //Imported Pages
 import Home from "./Pages/Home";
@@ -42,7 +43,10 @@ function App() {
         <Router>
           <nav className="navbar">
             <div className="left-side">
-              <img src={FCBolinIcon} alt="FC Bolin Icon" />
+              <img
+                src={theme == "light" ? FCBolinIconDark : FCBolinIconLight}
+                alt="FC Bolin Icon"
+              />
             </div>
             <div className="right-side">
               <nav className="navbar__links" id={showLinks ? "hidden" : ""}>
