@@ -7,11 +7,10 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .footer__title {
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
 }
 .footer__title h1 {
   font-family: "Comfortaa", serif;
@@ -34,7 +33,7 @@
   font-size: 2em;
 }
 .footer__copyright {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 10px 0;
 }
 .footer__copyright p {
   padding: 5px;
@@ -45,9 +44,10 @@
   text-decoration: none;
 }
 .footer__top-button {
-  position: absolute;
+  position: fixed;
   font-size: 2em;
-  right: 20px;
+  right: 5px;
+  bottom: 0px;
 }
 .footer__top-button a {
   text-decoration: none;
@@ -129,14 +129,17 @@
 }
 @media only screen and (max-width: 480px) {
   .footer__text {
-    width: 100%;
+    width: 95%;
   }
   .footer__copyright p {
     font-size: 0.7em;
   }
 }
-@media only screen and (max-width: 338px) {
-  .footer__top-button {
-    bottom: -155px;
+@media only screen and (max-width: 360px) {
+  .footer__text p {
+    font-size: 0.6em;
+  }
+  .footer__copyright p {
+    font-size: 0.6em;
   }
 }/*# sourceMappingURL=Footer.css.map */

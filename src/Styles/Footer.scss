@@ -6,11 +6,10 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 
   &__title {
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
 
     h1 {
       font-family: $comfortaa;
@@ -40,7 +39,7 @@
   }
 
   &__copyright {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 10px 0;
 
     p {
       padding: 5px;
@@ -54,9 +53,10 @@
   }
 
   &__top-button {
-    position: absolute;
+    position: fixed;
     font-size: 2em;
-    right: 20px;
+    right: 5px;
+    bottom: 0px;
 
     a {
       text-decoration: none;
@@ -196,7 +196,7 @@
 @media only screen and (max-width: 480px) {
   .footer {
     &__text {
-      width: 100%;
+      width: 95%;
     }
 
     &__copyright {
@@ -207,10 +207,18 @@
   }
 }
 
-@media only screen and (max-width: 338px) {
+@media only screen and (max-width: 360px) {
   .footer {
-    &__top-button {
-      bottom: -155px;
+    &__text {
+      p {
+        font-size: 0.6em;
+      }
+    }
+
+    &__copyright {
+      p {
+        font-size: 0.6em;
+      }
     }
   }
 }
