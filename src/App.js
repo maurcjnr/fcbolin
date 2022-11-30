@@ -9,6 +9,7 @@ import { BsFillSunFill, BsFillMoonFill, BsList, BsX } from "react-icons/bs";
 
 //CSS
 import "./Styles/Navbar.css";
+import "./Styles/Scrollbar.css";
 
 //Imported Images
 import FCBolinIconLight from "./Images/fcbolin-light.png";

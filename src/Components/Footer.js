@@ -1,5 +1,5 @@
 //Imported
-import React from "react";
+import { createContext, useState, React, useEffect } from "react";
 
 //Imported Icons
 import {
@@ -14,6 +14,18 @@ import "../Styles/Footer.css";
 
 function Footer() {
   //Top Button
+  const [backToTopButton, setBackToTopButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setBackToTopButton(true);
+      } else {
+        setBackToTopButton(false);
+      }
+    });
+  }, []);
+
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
@@ -68,11 +80,13 @@ function Footer() {
         </p>
       </div>
 
-      <div className="footer__top-button">
-        <a onClick={scrollUp}>
-          <BsFillArrowUpCircleFill />
-        </a>
-      </div>
+      {backToTopButton && (
+        <div className="footer__top-button">
+          <a onClick={scrollUp}>
+            <BsFillArrowUpCircleFill />
+          </a>
+        </div>
+      )}
     </div>
   );
 }
