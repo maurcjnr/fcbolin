@@ -1,4 +1,7 @@
+//Imported
 import React from "react";
+
+//CSS
 import "../Styles/Home.css";
 
 function About() {

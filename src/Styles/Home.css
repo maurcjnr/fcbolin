@@ -70,4 +70,13 @@
 }
 #dark .home__content__text p {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .home__content__title h1 {
+    font-size: 3em;
+  }
+  .home__content__text {
+    width: 90%;
+  }
 }/*# sourceMappingURL=Home.css.map */

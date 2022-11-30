@@ -1,11 +1,42 @@
+//Imported
 @import "../Variables/Variables.scss";
 
 .navbar {
+  position: fixed;
+  z-index: 1;
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+
+  .left-side {
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    img {
+      width: 45px;
+      height: 45px;
+      padding: 0 0 0 20px;
+    }
+  }
+
+  .right-side {
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    &__responsive-button {
+      display: none;
+      margin: 0 20px 0 0;
+      font-size: 1.8em;
+    }
+
+    #hidden {
+      display: flex;
+    }
+  }
 
   &__icon {
     padding: 0 5px 0 0;
@@ -27,10 +58,20 @@
   }
 }
 
-// Dark Mode
+//Dark Mode
 #light {
   .navbar {
     background-color: $roseColor1;
+
+    .right-side {
+      &__responsive-button {
+        color: $greyColor5;
+      }
+
+      #hidden {
+        background-color: $roseColor1;
+      }
+    }
 
     &__icon {
       color: $greyColor5;
@@ -50,6 +91,16 @@
   .navbar {
     background-color: $greyColor5;
 
+    .right-side {
+      &__responsive-button {
+        color: $roseColor1;
+      }
+
+      #hidden {
+        background-color: $greyColor5;
+      }
+    }
+
     &__icon {
       color: $roseColor1;
     }
@@ -60,6 +111,40 @@
       &:hover {
         color: $roseColor1;
       }
+    }
+  }
+}
+
+//Responsive
+@media only screen and (max-width: 768px) {
+  .navbar {
+    .right-side {
+      &__responsive-button {
+        display: flex;
+        cursor: pointer;
+      }
+
+      #hidden {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        height: 117px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          padding: 5px 0 5px 0;
+          margin: 0;
+        }
+      }
+    }
+
+    &__links {
+      display: none;
+      margin: 0;
     }
   }
 }

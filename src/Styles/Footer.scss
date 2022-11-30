@@ -1,3 +1,4 @@
+//Imported
 @import "../Variables/Variables.scss";
 
 .footer {
@@ -20,6 +21,7 @@
   }
 
   &__text {
+    text-align: center;
     padding: 10px 0 0 0;
 
     p {
@@ -57,11 +59,12 @@
 
     a {
       text-decoration: none;
+      cursor: pointer;
     }
   }
 }
 
-// Dark Mode
+//Dark Mode
 #light {
   .footer {
     background-color: $roseColor1;

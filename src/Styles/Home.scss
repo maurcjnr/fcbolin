@@ -1,3 +1,4 @@
+//Imported
 @import "../Variables/Variables.scss";
 
 .home {
@@ -48,7 +49,7 @@
   }
 }
 
-// Dark Mode
+//Dark Mode
 #light {
   .home {
     background-image: url("../Images/fcbolin-bg.png");
@@ -94,6 +95,23 @@
         p {
           color: $whiteColor;
         }
+      }
+    }
+  }
+}
+
+//Responsive
+@media only screen and (max-width: 768px) {
+  .home {
+    &__content {
+      &__title {
+        h1 {
+          font-size: 3em;
+        }
+      }
+
+      &__text {
+        width: 90%;
       }
     }
   }

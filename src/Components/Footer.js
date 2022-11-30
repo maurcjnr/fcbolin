@@ -1,7 +1,7 @@
+//Imported
 import React from "react";
-import "../Styles/Footer.css";
 
-//Icons
+//Imported Icons
 import {
   BsTwitch,
   BsYoutube,
@@ -9,7 +9,18 @@ import {
   BsFillArrowUpCircleFill,
 } from "react-icons/bs";
 
+//CSS
+import "../Styles/Footer.css";
+
 function Footer() {
+  //Top Button
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="footer">
       <div className="footer__title">
@@ -58,7 +69,7 @@ function Footer() {
       </div>
 
       <div className="footer__top-button">
-        <a href="/">
+        <a onClick={scrollUp}>
           <BsFillArrowUpCircleFill />
         </a>
       </div>
