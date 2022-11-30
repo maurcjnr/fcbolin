@@ -22,6 +22,7 @@
 .footer__text {
   text-align: center;
   padding: 10px 0 0 0;
+  width: 65%;
 }
 .footer__text p {
   font-family: "Comfortaa", serif;
@@ -113,4 +114,29 @@
 }
 #dark .footer__top-button a:hover {
   color: #fb9cb2;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__title h1 {
+    font-size: 1.1em;
+  }
+  .footer__text {
+    width: 80%;
+  }
+  .footer__text p {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer__text {
+    width: 100%;
+  }
+  .footer__copyright p {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 338px) {
+  .footer__top-button {
+    bottom: -155px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

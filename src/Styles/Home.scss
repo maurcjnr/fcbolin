@@ -116,3 +116,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .home {
+    &__content {
+      &__title {
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+}

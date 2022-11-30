@@ -23,6 +23,7 @@
   &__text {
     text-align: center;
     padding: 10px 0 0 0;
+    width: 65%;
 
     p {
       font-family: $comfortaa;
@@ -169,6 +170,47 @@
           color: $roseColor1;
         }
       }
+    }
+  }
+}
+
+//Responsive
+@media only screen and (max-width: 768px) {
+  .footer {
+    &__title {
+      h1 {
+        font-size: 1.1em;
+      }
+    }
+
+    &__text {
+      width: 80%;
+
+      p {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    &__text {
+      width: 100%;
+    }
+
+    &__copyright {
+      p {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  .footer {
+    &__top-button {
+      bottom: -155px;
     }
   }
 }
