@@ -14,14 +14,6 @@ function About() {
         </div>
         <div className="home__content__text">
           <p>Página SOBRE em contrução!</p>
-          <iframe
-            src="https://discord.com/widget?id=813108761362563133&theme=dark"
-            width="500"
-            height="300"
-            allowtransparency="true"
-            frameborder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-          ></iframe>
         </div>
       </div>
     </div>
